@@ -3,8 +3,7 @@ const submitButton= document.querySelector('.btn');
 const latitude=document.querySelector('.lati-field');
 const longitude=document.querySelector('.longi-field');
 const errorMessage=document.querySelector('#demo')
-latitude.value=52.508;
-longitude.value=13.381;
+
 submitButton.addEventListener('click', function(){
 if(!latitude.value||!longitude.value){
 errorMessage.innerHTML="Please Enter valid data"
@@ -37,4 +36,3 @@ fetch(`https://geocode.xyz/${latitude.value},${longitude.value}?geoit=json`).
 //        errorMessage.style.color='green'
 //        errorMessage.style.fontSize='30px';
 //     })
-    
